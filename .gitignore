@@ -1,0 +1,34 @@
+# Python
+*.pyc
+__pycache__/
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# CDK
+cdk.out/
+.cdk.staging/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.env.local
+
+# AWS
+.aws-sam/
+
+# Node (if using CDK CLI globally)
+node_modules/
+
+# Logs
+*.log
