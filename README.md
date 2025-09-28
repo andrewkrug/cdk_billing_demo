@@ -62,11 +62,8 @@ If this is your first time using CDK in this AWS account/region:
 
 ```bash
 # Bootstrap the CDK (creates necessary resources for CDK deployments)
-cdk bootstrap aws://ACCOUNT-ID/us-west-2
+cdk bootstrap -c email=your-email@example.com
 
-# Note: Replace ACCOUNT-ID with your actual AWS account ID
-# You can find your account ID by running:
-aws sts get-caller-identity --query Account --output text
 ```
 
 ### Step 6: Deploy the Stack
