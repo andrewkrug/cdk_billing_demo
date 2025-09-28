@@ -9,7 +9,7 @@ This AWS CDK application creates three AWS Budget alerts to help monitor your AW
   - 80% of budget threshold (warning)
   - 100% of budget threshold (exceeded)
   - When forecasted to exceed 100% of budget
-- Deploys to us-east-1 (required for AWS Budgets)
+- Deploys to us-west-2 (required for AWS Budgets)
 - Easy deployment via AWS CloudShell
 
 ## Prerequisites
@@ -30,10 +30,10 @@ This AWS CDK application creates three AWS Budget alerts to help monitor your AW
 
 ```bash
 # Clone the repository (replace with your actual repository URL)
-git clone https://github.com/yourusername/cdk-billing-demo.git
+git clone https://github.com/andrewkrug/cdk_billing_demo.git
 
 # Navigate to the project directory
-cd cdk-billing-demo
+cd cdk_billing_demo
 ```
 
 ### Step 3: Set Up Python Virtual Environment
@@ -62,7 +62,7 @@ If this is your first time using CDK in this AWS account/region:
 
 ```bash
 # Bootstrap the CDK (creates necessary resources for CDK deployments)
-cdk bootstrap aws://ACCOUNT-ID/us-east-1
+cdk bootstrap aws://ACCOUNT-ID/us-west-2
 
 # Note: Replace ACCOUNT-ID with your actual AWS account ID
 # You can find your account ID by running:
@@ -170,8 +170,8 @@ To change when alerts are sent, modify the `threshold` values in the `Notificati
    - Check you have AdministratorAccess or appropriate permissions
 
 4. **Region Error**: 
-   - AWS Budgets must be deployed to us-east-1
-   - The stack automatically deploys to us-east-1
+   - AWS Budgets must be deployed to us-west-2
+   - The stack automatically deploys to us-west-2
 
 ## Cost Considerations
 

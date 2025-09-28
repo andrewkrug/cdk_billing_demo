@@ -13,7 +13,7 @@ BillingAlarmsStack(app, "BillingAlarmsStack",
     email_address=email,
     env=cdk.Environment(
         account=os.getenv('CDK_DEFAULT_ACCOUNT'),
-        region='us-east-1'  # Budgets must be in us-east-1
+        region='us-west-2'  # Budgets must be in us-west-2
     ),
     description="Stack that creates AWS Budget alerts for $25, $50, and $100 thresholds"
 )
